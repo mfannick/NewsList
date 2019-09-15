@@ -1,0 +1,26 @@
+<!-- {% macro displayNewsList(sourcesList) %}
+{%for source in sourcesList%}
+<p>{{source.name}}</p>
+<p>{{source.description}}</p>
+<p>{{source.language}}</p>
+{%endfor%}
+{%endmacro%} -->
+
+
+{% macro displayNewsList(sourcesList) %}
+{% for source in sourcesList %}
+<div class="yes">
+    <p>{{source.description}}</p>
+
+    <div class="text-center">
+        <a href="{{source.url}}" target="_blank">Visit Us</a>
+        <h4><a href="{{url_for('main.newsArticles', id=source.id)}}" target="_blank">
+                {{ source.name|truncate(10)}}</a></h4>
+
+
+    </div>
+</div>
+
+{% endfor %}
+
+{%endmacro%}
