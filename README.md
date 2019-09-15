@@ -11,6 +11,7 @@
    ### Technologies used
 
      -Python
+     -Flask micro-frameWork
 
 
    ### Contact information
