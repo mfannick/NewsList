@@ -5,7 +5,7 @@
 
    | Required                                  | Description                                                       | How to run                            |
 |-------------------------------------------|-------------------------------------------------------------------|---------------------------------------|
-| A user visit the website             | S/he can see the publishers details and articles                                   | The project is run using the browser |
+| A user visit the website             | S/he can see the news publishers details and articles                                   | The project is run using the browser |
                  
 
    ### Technologies used
