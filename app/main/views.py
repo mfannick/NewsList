@@ -1,10 +1,8 @@
-# from . import main
-# from flask import render_template
+
 from flask import render_template,request,redirect,url_for
 from . import main
 from ..requests import getNewsSource,getNewsArticles
-# from .forms import ReviewForm
-# from ..models import Review
+
 
 
 @main.route('/')
