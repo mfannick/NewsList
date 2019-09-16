@@ -65,7 +65,7 @@ def getNewsArticles(id):
         getNewsArticlesResponse=json.loads(getNewsArticlesData)
 
         newsArticlesResult=None
-        if getNewsArticlesUrl['articles']:
+        if getNewsArticlesResponse['articles']:
             newsArticlesResultList=getNewsArticlesResponse['articles']
             newsArticlesResult=processNewsArticlesResult(newsArticlesResultList)
         
@@ -83,7 +83,7 @@ def processNewsArticlesResult(newsArticlesList):
            urlToImage=newsArticleItem.get('urlToImage')
            publishedAt=newsArticleItem.get('publishedAt')
            
-           newsArticleObject= NewsArticles(id,author,title,description,url,urlToImage,publishedAt)# object of values we got
+           newsArticleObject= NewsArticles(id,name,author,title,description,url,urlToImage,publishedAt)# object of values we got
            newsArticlesResult.append(newsArticleObject)
     return newsArticlesResult
 
